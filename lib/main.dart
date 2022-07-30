@@ -15,17 +15,24 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.green,
           title: const Text('Flutter is fun~'),
         ),
-        body: Row(
+        body: ListView(
+          scrollDirection: Axis.horizontal,
           children: [
             Container(
               color: Colors.red,
-              width: 100,
-              height: 100,
+              width: 500,
+              height: 500,
             ),
-            const Icon(
-              Icons.leaderboard,
+            Container(
+              color: Colors.blue,
+              width: 500,
+              height: 500,
             ),
-            const Icon(Icons.leaderboard),
+            Container(
+              color: Colors.green,
+              width: 500,
+              height: 500,
+            ),
           ],
         ),
         floatingActionButton: FloatingActionButton(
