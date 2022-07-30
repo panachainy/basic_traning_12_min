@@ -22,9 +22,36 @@ class MyApp extends StatelessWidget {
               width: 100,
               height: 100,
             ),
-            Icon(Icons.leaderboard),
-            Icon(Icons.leaderboard),
+            const Icon(
+              Icons.leaderboard,
+            ),
+            const Icon(Icons.leaderboard),
           ],
+        ),
+        floatingActionButton: FloatingActionButton(
+          child: Icon(Icons.add),
+          onPressed: () {
+            print('pressed!');
+          },
+        ),
+        bottomNavigationBar: BottomNavigationBar(
+          items: const [
+            BottomNavigationBarItem(
+              icon: Icon(Icons.home),
+              label: 'Home',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.business),
+              label: 'Business',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.school),
+              label: 'School',
+            ),
+          ],
+        ),
+        drawer: const Drawer(
+          child: Text('Yo!'),
         ),
       ),
     );
